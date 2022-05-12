@@ -23,7 +23,7 @@ class ProductFactory extends Factory
         return [
             'nama' => 'PD ' . $this->faker->word() . '-' . $this->faker->numberBetween(100, 1000),
             'harga' => $this->faker->randomFloat(2, 10000, 100000),
-            'keterangan' => $this->faker->text,
+            'keterangan' => $this->faker->text(30),
             'persediaan' => $this->faker->randomFloat(2, 10000, 100000),
         ];
     }

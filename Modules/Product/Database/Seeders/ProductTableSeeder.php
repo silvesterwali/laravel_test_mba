@@ -18,6 +18,6 @@ class ProductTableSeeder extends Seeder
         Model::unguard();
 
         // $this->call("OthersTableSeeder");
-        Product::factory(100)->create();
+        Product::factory(20)->create();
     }
 }
